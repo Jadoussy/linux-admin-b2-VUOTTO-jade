@@ -4,7 +4,7 @@ Ma configuration :
 - VM Linux : distribution Ubuntu (version 24.04.4 LTS)
 - Machine hôte : Windows 11
 
-### Tableau de statut
+# Tableau de statut
 
 | Mission | Description | Statut | Points estimés |
 | :--- | :--- | :---: | :---: |
@@ -29,3 +29,29 @@ J'ai créé un script de surveillance des tentatives de connexion SSH échouées
 
 ### Mission 5
 J'ai créé un script pour durcir le protocole SSH, une backup et la validation de syntaxe de config. Ainsi que la mise en place d'un pare feu via UFW.
+
+# Vérifications finales
+
+git log --oneline
+```
+1eb1180 (HEAD -> main, origin/main, origin/HEAD) docs(m5): update README.md
+6c7e198 docs(m5): update README.md
+18765f6 docs(m5): rapport mission 5 avec captures de vérification et tests
+abf71b6 feat(m5): scrip tharden_ssh : durcicement du protocle SSH et pare feu UFW
+6886660 docs(m4): update README.md
+68b9c7a feat(m4): script logwatcher.sh pour monitorer les tentatives de connexion échouées SSH
+3271381 feat(m4): fichier unit logwatcher.service
+a010b0f docs(m4): rapport mission 4 avec captures de vérification et tests
+```
+git status
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+git push origin main
+```
+Everything up-to-date
+```
