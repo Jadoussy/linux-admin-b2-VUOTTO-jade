@@ -12,7 +12,7 @@ Ma configuration :
 | M2 | Gestion des utilisateurs & groupes | ✅ | /20 |
 | M3 | Système de fichiers & permissions | ✅ | /20 |
 | M4 | Service systemd custom | ✅ | /20 |
-| M5 | Sécurisation SSH & pare-feu | ❌ | /20 |
+| M5 | Sécurisation SSH & pare-feu | ✅ | /20 |
 | Bonus | (optionnel) | ❌ | /10 |
 
 ### Mission 1
@@ -26,3 +26,6 @@ J'ai créé un script qui gère les droits POSIX et créer une ACL pour un utili
 
 ### Mission 4
 J'ai créé un script de surveillance des tentatives de connexion SSH échouées. Ainsi qu'un fichier de config systemd pour faire tourner et supérviser automatiquement le script en arrière plan en tant que service système.
+
+### Mission 5
+J'ai créé un script pour durcir le protocole SSH et la mise en place d'un pare feu via UFW.
