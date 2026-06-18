@@ -1,7 +1,7 @@
 # ============================================================
 # Fichier  : logwatcher.service
-# Auteur   : Prénom NOM
-# Date     : YYYY-MM-DD
+# **Auteur :** Vuotto Jade 
+# **Date :** 2026-06-18
 # Desc     : Service systemd pour la surveillance SSH
 # Deploy   : sudo cp configs/logwatcher.service /etc/systemd/system/
 #            sudo systemctl daemon-reload
@@ -9,19 +9,34 @@
 # ============================================================
 
 [Unit]
-Description=            # TODO : description claire du service
-Documentation=          # TODO : URL ou chemin vers la documentation (optionnel)
-After=                  # TODO : dépendances (network.target syslog.target)
+Description=Service de surveillance des tentatives de connexion ssh (logwatcher)          
+
+# dépendances (network.target syslog.target)
+After=network.target syslog.target                                                         
 
 [Service]
-Type=                   # TODO : type approprié pour une boucle infinie
-User=                   # TODO : utilisateur sous lequel tourne le service
-ExecStart=              # TODO : chemin absolu vers logwatcher.sh
-Restart=                # TODO : politique de redémarrage en cas d'échec
-RestartSec=             # TODO : délai avant redémarrage
-StandardOutput=         # TODO : destination des logs stdout
-StandardError=          # TODO : destination des logs stderr
-SyslogIdentifier=       # TODO : identifiant dans journald
+# type approprié pour une boucle infinie
+Type=simple                                   
+
+# User=esgi # utilisateur sous lequel tourne le service
+
+# chemin absolu vers logwatcher.sh
+ExecStart=/bin/bash /home/esgi/Bureau/Linux18juin/linux-admin-b2-VUOTTO-jade/scripts/logwatcher.sh     
+
+# politique de redémarrage en cas d'échec
+Restart=on-failure    
+
+# délai avant redémarrage
+RestartSec=10s
+
+# destination des logs stdout                     
+StandardOutput=journal
+
+# destination des logs stderr          
+StandardError=journal
+
+# identifiant dans journald
+SyslogIdentifier=logwatcher       
 
 # Optionnel – Hardening (bonus)
 # NoNewPrivileges=yes
@@ -29,4 +44,5 @@ SyslogIdentifier=       # TODO : identifiant dans journald
 # PrivateTmp=yes
 
 [Install]
-WantedBy=               # TODO : target de démarrage
+# target de démarrage
+WantedBy=multi-user.target
