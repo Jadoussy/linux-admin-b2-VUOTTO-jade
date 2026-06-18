@@ -11,7 +11,7 @@ Ma configuration :
 | M1 | Mise en place du dépôt GitHub | ✅  | /10 |
 | M2 | Gestion des utilisateurs & groupes | ✅ | /20 |
 | M3 | Système de fichiers & permissions | ✅ | /20 |
-| M4 | Service systemd custom | ❌ | /20 |
+| M4 | Service systemd custom | ✅ | /20 |
 | M5 | Sécurisation SSH & pare-feu | ❌ | /20 |
 | Bonus | (optionnel) | ❌ | /10 |
 
@@ -23,3 +23,6 @@ J'ai créé un script qui créer des groupes et utilisateurs s'il n'existe pas d
 
 ### Mission 3
 J'ai créé un script qui gère les droits POSIX et créer une ACL pour un utilisateur. Utilisation des bits spéciaux pour créer un dossier collaboratif pour les utilisateurs membres de devteam.
+
+### Mission 4
+J'ai créé un script de surveillance des tentatives de connexion SSH échouées. Ainsi qu'un fichier de config systemd pour faire tourner et supérviser automatiquement le script en arrière plan en tant que service système.
