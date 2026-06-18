@@ -8,7 +8,7 @@ Ma configuration :
 
 | Mission | Description | Statut | Points estimés |
 | :--- | :--- | :---: | :---: |
-| M1 | Mise en place du dépôt GitHub | ❌ | /10 |
+| M1 | Mise en place du dépôt GitHub | ✅  | /10 |
 | M2 | Gestion des utilisateurs & groupes | ❌ | /20 |
 | M3 | Système de fichiers & permissions | ❌ | /20 |
 | M4 | Service systemd custom | ❌ | /20 |
@@ -16,4 +16,4 @@ Ma configuration :
 | Bonus | (optionnel) | ❌ | /10 |
 
 ### Mission 1
-Un résumé d'une phrase par mission : EN COURS
+J'ai recréé l'arborescence du projet, rédigé le readMe et préparé mon environnement (installation de VScode et Git sur la VM Linux) 
