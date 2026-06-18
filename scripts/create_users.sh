@@ -110,7 +110,6 @@ for USER in "$USER1" "$USER2" "$USER3"; do
 done  
 
 # === Répertoire projet =======================================
-# TODO : créer /opt/devproject/ avec les bons propriétaires et permissions
 echo -e "\n--- Répertoire projet : $PROJET_DIR ---"
 
 # S'il n'existe pas déjà (-p), création du répertoire "/opt/devproject/"
