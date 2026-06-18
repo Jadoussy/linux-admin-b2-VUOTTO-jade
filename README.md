@@ -10,7 +10,7 @@ Ma configuration :
 | :--- | :--- | :---: | :---: |
 | M1 | Mise en place du dépôt GitHub | ✅  | /10 |
 | M2 | Gestion des utilisateurs & groupes | ✅ | /20 |
-| M3 | Système de fichiers & permissions | ❌ | /20 |
+| M3 | Système de fichiers & permissions | ✅ | /20 |
 | M4 | Service systemd custom | ❌ | /20 |
 | M5 | Sécurisation SSH & pare-feu | ❌ | /20 |
 | Bonus | (optionnel) | ❌ | /10 |
@@ -20,3 +20,6 @@ J'ai recréé l'arborescence du projet, rédigé le readMe et préparé mon envi
 
 ### Mission 2
 J'ai créé un script qui créer des groupes et utilisateurs s'il n'existe pas déjà. L'utilisation de la condition if, else et la boucle for pour gérer l'idempotence du script.
+
+### Mission 3
+J'ai créé un script qui gère les droits POSIX et créer une ACL pour un utilisateur. Utilisation des bits spéciaux pour créer un dossier collaboratif pour les utilisateurs membres de devteam.
