@@ -1,8 +1,8 @@
 [18/06/26] VUOTTO Jade ESGI B2
 
 Ma configuration : 
-- une VM Linux distribution Ubuntu (version 24.04.4 LTS)
-- ma machine hote sous Windows 11
+- VM Linux : distribution Ubuntu (version 24.04.4 LTS)
+- Machine hôte : Windows 11
 
 ### Tableau de statut
 
@@ -28,4 +28,4 @@ J'ai créé un script qui gère les droits POSIX et créer une ACL pour un utili
 J'ai créé un script de surveillance des tentatives de connexion SSH échouées. Ainsi qu'un fichier de config systemd pour faire tourner et supérviser automatiquement le script en arrière plan en tant que service système.
 
 ### Mission 5
-J'ai créé un script pour durcir le protocole SSH et la mise en place d'un pare feu via UFW.
+J'ai créé un script pour durcir le protocole SSH, une backup et la validation de syntaxe de config. Ainsi que la mise en place d'un pare feu via UFW.
